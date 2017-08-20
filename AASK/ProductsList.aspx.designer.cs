@@ -10,7 +10,7 @@
 namespace AASK {
     
     
-    public partial class About {
+    public partial class ProductsList {
         
         /// <summary>
         /// GridView1 control.

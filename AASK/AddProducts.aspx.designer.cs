@@ -10,7 +10,7 @@
 namespace AASK {
     
     
-    public partial class WebForm1 {
+    public partial class AddProducts {
         
         /// <summary>
         /// ProductIDLabel control.
@@ -40,13 +40,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label ProductNameLabel;
         
         /// <summary>
-        /// ProductNameDropDownList control.
+        /// ProductNameTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ProductNameDropDownList;
+        protected global::System.Web.UI.WebControls.TextBox ProductNameTextBox;
         
         /// <summary>
         /// SupplierIDLabel control.
@@ -67,22 +67,22 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.TextBox SupplierIDTextBox;
         
         /// <summary>
-        /// CategoryIDLabel control.
+        /// CategoryLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CategoryIDLabel;
+        protected global::System.Web.UI.WebControls.Label CategoryLabel;
         
         /// <summary>
-        /// CategoryIDTextBox control.
+        /// CategoryDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox CategoryIDTextBox;
+        protected global::System.Web.UI.WebControls.DropDownList CategoryDropDownList;
         
         /// <summary>
         /// QuantityPerUnitLabel control.
@@ -184,13 +184,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label DiscontinuedLabel;
         
         /// <summary>
-        /// DiscontinuedCheckBox control.
+        /// DiscontinuedDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox DiscontinuedCheckBox;
+        protected global::System.Web.UI.WebControls.DropDownList DiscontinuedDropDownList;
         
         /// <summary>
         /// OnlineLabel control.
@@ -202,13 +202,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label OnlineLabel;
         
         /// <summary>
-        /// OnlineCheckBox control.
+        /// OnlineDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox OnlineCheckBox;
+        protected global::System.Web.UI.WebControls.DropDownList OnlineDropDownList;
         
         /// <summary>
         /// SaleLabel control.
@@ -220,13 +220,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label SaleLabel;
         
         /// <summary>
-        /// SaleCheckBox control.
+        /// SaleDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox SaleCheckBox;
+        protected global::System.Web.UI.WebControls.DropDownList SaleDropDownList;
         
         /// <summary>
         /// SubmitButton control.
@@ -236,5 +236,14 @@ namespace AASK {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SubmitButton;
+        
+        /// <summary>
+        /// NotifyLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label NotifyLabel;
     }
 }
