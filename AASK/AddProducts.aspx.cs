@@ -23,13 +23,14 @@ namespace AASK
                     cmd.CommandType = CommandType.Text;
                     conn.Open();
                     SqlDataReader rd = cmd.ExecuteReader();
-                    while (rd.Read())
+                    do
                     {
                         CategoryDropDownList.DataSource = rd;
                         CategoryDropDownList.DataValueField = "CategoryID";
                         CategoryDropDownList.DataTextField = "CategoryName";
                         CategoryDropDownList.DataBind();
                     }
+                    while (rd.Read());
                 }
             }
         }
@@ -64,7 +65,7 @@ namespace AASK
             {
                 //Success notification
                 NotifyLabel.Text = "Query executed successfully. " + rowsAffected + " row(s) affected.";
-                NotifyLabel.ForeColor = System.Drawing.Color.Green;
+                NotifyLabel.ForeColor = System.Drawing.Color.ForestGreen;
                 NotifyLabel.Visible = true;
             }
             else
