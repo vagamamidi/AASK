@@ -13,24 +13,6 @@ namespace AASK {
     public partial class AddProducts {
         
         /// <summary>
-        /// ProductIDLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ProductIDLabel;
-        
-        /// <summary>
-        /// ProductIDTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ProductIDTextBox;
-        
-        /// <summary>
         /// ProductNameLabel control.
         /// </summary>
         /// <remarks>

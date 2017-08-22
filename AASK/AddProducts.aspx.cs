@@ -33,15 +33,16 @@ namespace AASK
                     while (rd.Read());
                 }
             }
+            NotifyLabel.Text = "";
         }
 
         protected void onSubmitButtonClick(object sender, EventArgs e)
         {
-            String sqlQuery = @"insert into Products$ (ProductID, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder,
-                                ReorderLevel, Discontinued, Online, Sale) values(@ProductID, @ProductName, @SupplierID, @CategoryID, @QuantityPerUnit, @UnitPrice,
+            String sqlQuery = @"insert into Products$ (ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder,
+                                ReorderLevel, Discontinued, Online, Sale) values(@ProductName, @SupplierID, @CategoryID, @QuantityPerUnit, @UnitPrice,
                                 @UnitsInStock, @UnitsOnOrder, @ReorderLevel, @Discontinued, @Online, @Sale)";
             SqlCommand insertCmd = new SqlCommand(sqlQuery, conn);
-            insertCmd.Parameters.AddWithValue("@ProductID", ProductIDTextBox.Text);
+            //insertCmd.Parameters.AddWithValue("@ProductID", ProductIDTextBox.Text);
             insertCmd.Parameters.AddWithValue("@ProductName", ProductNameTextBox.Text);
             insertCmd.Parameters.AddWithValue("@SupplierID", SupplierIDTextBox.Text);
 
@@ -67,6 +68,7 @@ namespace AASK
                 NotifyLabel.Text = "Query executed successfully. " + rowsAffected + " row(s) affected.";
                 NotifyLabel.ForeColor = System.Drawing.Color.ForestGreen;
                 NotifyLabel.Visible = true;
+                Response.Redirect("~/ProductsList.aspx");
             }
             else
             {

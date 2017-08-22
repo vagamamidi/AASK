@@ -1,16 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddProducts.aspx.cs" Inherits="AASK.AddProducts" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    
     <h1>Create Products</h1>
     <p class="lead">Fill in new product details.</p>
     <table>
-        <tr>
+        <%--<tr>
             <td style="height: 24px">
                 <asp:Label ID="ProductIDLabel" runat="server" Text="Product ID"></asp:Label>
             </td>
             <td style="width: 130px; height: 24px">
                 <asp:TextBox ID="ProductIDTextBox" runat="server"></asp:TextBox>
             </td>
-        </tr>
+        </tr>--%>
         <tr>
             <td>
                 <asp:Label ID="ProductNameLabel" runat="server" Text="Product Name"></asp:Label>
@@ -32,7 +34,9 @@
                 <asp:Label ID="CategoryLabel" runat="server" Text="Category"></asp:Label>
             </td>
             <td style="width: 130px; height: 24px">
-                <asp:DropDownList ID="CategoryDropDownList" runat="server" style="width: 130px; height: 24px"></asp:DropDownList>
+                <asp:DropDownList ID="CategoryDropDownList" runat="server" style="width: 130px; height: 24px">
+                    <asp:ListItem Text="Select" Value="-1"></asp:ListItem>
+                </asp:DropDownList>
             </td>
         </tr>
         <tr>
@@ -81,7 +85,7 @@
             </td>
             <td style="width: 130px; height: 24px">
                 <asp:DropDownList ID="DiscontinuedDropDownList" runat="server" style="width: 130px; height: 24px">
-                    <asp:ListItem Text="Select" Value=""></asp:ListItem>
+                    <asp:ListItem Text="Select" Value="-1"></asp:ListItem>
                     <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
                     <asp:ListItem Text="No" Value="0"></asp:ListItem>
                 </asp:DropDownList>
@@ -93,7 +97,7 @@
             </td>
             <td style="width: 130px; height: 24px">
                 <asp:DropDownList ID="OnlineDropDownList" runat="server" style="width: 130px; height: 24px">
-                    <asp:ListItem Text="Select" Value=""></asp:ListItem>
+                    <asp:ListItem Text="Select" Value="-1"></asp:ListItem>
                     <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
                     <asp:ListItem Text="No" Value="0"></asp:ListItem>
                 </asp:DropDownList>
@@ -105,7 +109,7 @@
             </td>
             <td style="width: 130px; height: 24px">
                 <asp:DropDownList ID="SaleDropDownList" runat="server" style="width: 130px; height: 24px">
-                    <asp:ListItem Text="Select" Value=""></asp:ListItem>
+                    <asp:ListItem Text="Select" Value="-1"></asp:ListItem>
                     <asp:ListItem Text="Yes" Value="1"></asp:ListItem>
                     <asp:ListItem Text="No" Value="0"></asp:ListItem>
                 </asp:DropDownList>
