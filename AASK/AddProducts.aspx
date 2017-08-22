@@ -4,21 +4,13 @@
     
     <h1>Create Products</h1>
     <p class="lead">Fill in new product details.</p>
-    <table>
-        <%--<tr>
-            <td style="height: 24px">
-                <asp:Label ID="ProductIDLabel" runat="server" Text="Product ID"></asp:Label>
-            </td>
-            <td style="width: 130px; height: 24px">
-                <asp:TextBox ID="ProductIDTextBox" runat="server"></asp:TextBox>
-            </td>
-        </tr>--%>
+    <table id="productEntryForm">
         <tr>
             <td>
                 <asp:Label ID="ProductNameLabel" runat="server" Text="Product Name"></asp:Label>
             </td>
             <td style="width: 130px; height: 24px">
-                <asp:TextBox ID="ProductNameTextBox" runat="server"></asp:TextBox>
+                <input id="ProductNameInput" type="text" runat="server"/>
             </td>
         </tr>
         <tr>
@@ -26,7 +18,7 @@
                 <asp:Label ID="SupplierIDLabel" runat="server" Text="Supplier ID"></asp:Label>
             </td>
             <td style="width: 130px; height: 24px">
-                <asp:TextBox ID="SupplierIDTextBox" runat="server"></asp:TextBox>
+                <input id="SupplierIDInput" type="number" runat="server"/>
             </td>
         </tr>
           <tr>
@@ -44,7 +36,7 @@
                 <asp:Label ID="QuantityPerUnitLabel" runat="server" Text="Quantity Per Unit"></asp:Label>
             </td>
             <td style="width: 130px; height: 24px">
-                <asp:TextBox ID="QuantityPerUnitTextBox" runat="server"></asp:TextBox>
+                <input id="QuantityPerUnitInput" type="text" runat="server"/>
             </td>
         </tr>
         <tr>
@@ -52,7 +44,7 @@
                 <asp:Label ID="UnitPriceLabel" runat="server" Text="Unit Price"></asp:Label>
             </td>
             <td style="width: 130px; height: 24px">
-                <asp:TextBox ID="UnitPriceTextBox" runat="server"></asp:TextBox>
+                <input id="UnitPriceInput" type="number" step="0.01" runat="server" />
             </td>
         </tr>
         <tr>
@@ -60,7 +52,7 @@
                 <asp:Label ID="UnitsInStockLabel" runat="server" Text="Units In Stock"></asp:Label>
             </td>
             <td style="width: 130px; height: 24px">
-                <asp:TextBox ID="UnitsInStockTextBox" runat="server"></asp:TextBox>
+                <input id="UnitsInStockInput" type="number" runat="server" />
             </td>
         </tr>
         <tr>
@@ -68,7 +60,7 @@
                 <asp:Label ID="UnitsOnOrderLabel" runat="server" Text="Units On Order"></asp:Label>
             </td>
             <td style="width: 130px; height: 24px">
-                <asp:TextBox ID="UnitsOnOrderTextBox" runat="server"></asp:TextBox>
+                <input id="UnitsOnOrderInput" type="number" runat="server" />
             </td>
         </tr>
         <tr>
@@ -76,7 +68,7 @@
                 <asp:Label ID="ReorderLevelLabel" runat="server" Text="Reorder Level"></asp:Label>
             </td>
             <td style="width: 130px; height: 24px">
-                <asp:TextBox ID="ReorderLevelTextBox" runat="server"></asp:TextBox>
+                <input id="ReorderLevelInput" type="number" runat="server" />
             </td>
         </tr>
         <tr>
@@ -118,9 +110,5 @@
     </table>
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="SubmitButton" runat="server" Text="Submit" Width="125px" OnClick="onSubmitButtonClick"/>
-    <br />
-    <br />
-    <asp:Label ID="NotifyLabel" runat="server" Text="" Visible="false"></asp:Label>
-    <br />
+    <asp:Button ID="SubmitButton" runat="server" Text="Submit" Width="125px" OnClick="onSubmitButtonClick"/>    
 </asp:Content>

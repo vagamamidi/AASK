@@ -33,7 +33,6 @@ namespace AASK
                     while (rd.Read());
                 }
             }
-            NotifyLabel.Text = "";
         }
 
         protected void onSubmitButtonClick(object sender, EventArgs e)
@@ -42,18 +41,15 @@ namespace AASK
                                 ReorderLevel, Discontinued, Online, Sale) values(@ProductName, @SupplierID, @CategoryID, @QuantityPerUnit, @UnitPrice,
                                 @UnitsInStock, @UnitsOnOrder, @ReorderLevel, @Discontinued, @Online, @Sale)";
             SqlCommand insertCmd = new SqlCommand(sqlQuery, conn);
-            //insertCmd.Parameters.AddWithValue("@ProductID", ProductIDTextBox.Text);
-            insertCmd.Parameters.AddWithValue("@ProductName", ProductNameTextBox.Text);
-            insertCmd.Parameters.AddWithValue("@SupplierID", SupplierIDTextBox.Text);
 
+            insertCmd.Parameters.AddWithValue("@ProductName", ProductNameInput.Value);
+            insertCmd.Parameters.AddWithValue("@SupplierID", SupplierIDInput.Value);
             insertCmd.Parameters.AddWithValue("@CategoryID", CategoryDropDownList.SelectedValue);
-
-            insertCmd.Parameters.AddWithValue("@QuantityPerUnit", QuantityPerUnitTextBox.Text);
-            insertCmd.Parameters.AddWithValue("@UnitPrice", UnitPriceTextBox.Text);
-            insertCmd.Parameters.AddWithValue("@UnitsInStock", UnitsInStockTextBox.Text);
-            insertCmd.Parameters.AddWithValue("@UnitsOnOrder", UnitsOnOrderTextBox.Text);
-            insertCmd.Parameters.AddWithValue("@ReorderLevel", ReorderLevelTextBox.Text);
-
+            insertCmd.Parameters.AddWithValue("@QuantityPerUnit", QuantityPerUnitInput.Value);
+            insertCmd.Parameters.AddWithValue("@UnitPrice", UnitPriceInput.Value);
+            insertCmd.Parameters.AddWithValue("@UnitsInStock", UnitsInStockInput.Value);
+            insertCmd.Parameters.AddWithValue("@UnitsOnOrder", UnitsOnOrderInput.Value);
+            insertCmd.Parameters.AddWithValue("@ReorderLevel", ReorderLevelInput.Value);
             insertCmd.Parameters.AddWithValue("@Discontinued", DiscontinuedDropDownList.SelectedValue);
             insertCmd.Parameters.AddWithValue("@Online", OnlineDropDownList.SelectedValue);
             insertCmd.Parameters.AddWithValue("@Sale", SaleDropDownList.SelectedValue);
@@ -65,17 +61,12 @@ namespace AASK
             if (rowsAffected == 1)
             {
                 //Success notification
-                NotifyLabel.Text = "Query executed successfully. " + rowsAffected + " row(s) affected.";
-                NotifyLabel.ForeColor = System.Drawing.Color.ForestGreen;
-                NotifyLabel.Visible = true;
                 Response.Redirect("~/ProductsList.aspx");
             }
             else
             {
                 //Error notification
-                NotifyLabel.Text = "There was an error inserting your record.";
-                NotifyLabel.ForeColor = System.Drawing.Color.Red;
-                NotifyLabel.Visible = true;
+                
             }
 
             conn.Close();

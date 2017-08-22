@@ -22,13 +22,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label ProductNameLabel;
         
         /// <summary>
-        /// ProductNameTextBox control.
+        /// ProductNameInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ProductNameTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText ProductNameInput;
         
         /// <summary>
         /// SupplierIDLabel control.
@@ -40,13 +40,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label SupplierIDLabel;
         
         /// <summary>
-        /// SupplierIDTextBox control.
+        /// SupplierIDInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox SupplierIDTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl SupplierIDInput;
         
         /// <summary>
         /// CategoryLabel control.
@@ -76,13 +76,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label QuantityPerUnitLabel;
         
         /// <summary>
-        /// QuantityPerUnitTextBox control.
+        /// QuantityPerUnitInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox QuantityPerUnitTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText QuantityPerUnitInput;
         
         /// <summary>
         /// UnitPriceLabel control.
@@ -94,13 +94,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label UnitPriceLabel;
         
         /// <summary>
-        /// UnitPriceTextBox control.
+        /// UnitPriceInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox UnitPriceTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl UnitPriceInput;
         
         /// <summary>
         /// UnitsInStockLabel control.
@@ -112,13 +112,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label UnitsInStockLabel;
         
         /// <summary>
-        /// UnitsInStockTextBox control.
+        /// UnitsInStockInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox UnitsInStockTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl UnitsInStockInput;
         
         /// <summary>
         /// UnitsOnOrderLabel control.
@@ -130,13 +130,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label UnitsOnOrderLabel;
         
         /// <summary>
-        /// UnitsOnOrderTextBox control.
+        /// UnitsOnOrderInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox UnitsOnOrderTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl UnitsOnOrderInput;
         
         /// <summary>
         /// ReorderLevelLabel control.
@@ -148,13 +148,13 @@ namespace AASK {
         protected global::System.Web.UI.WebControls.Label ReorderLevelLabel;
         
         /// <summary>
-        /// ReorderLevelTextBox control.
+        /// ReorderLevelInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ReorderLevelTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl ReorderLevelInput;
         
         /// <summary>
         /// DiscontinuedLabel control.
@@ -218,14 +218,5 @@ namespace AASK {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SubmitButton;
-        
-        /// <summary>
-        /// NotifyLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NotifyLabel;
     }
 }
